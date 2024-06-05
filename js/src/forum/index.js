@@ -43,7 +43,7 @@ app.initializers.add('dem13n/discussion/cards', () => {
           <div class="DiscussionList-discussions flexCard">
             {state.getPages().map((pg, o) => {
               return pg.items.map((discussion, i) => {
-                return m(ListItem, {discussion: discussion})
+                return m(CardItem, {discussion: discussion})
               });
             })}
           </div>
